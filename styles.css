@@ -1,0 +1,26 @@
+/* Required properties: 
+  background,
+  color,
+  font-family,
+  font-size,
+  height,
+  margin,
+  padding,
+  text-align,
+  Styled links using pseudo-classes
+*/
+
+/* Font Styles */
+h1,
+h2,
+h3 {
+  font-family: 'Permanent Marker',
+  cursive;
+}
+
+p,
+a,
+li {
+  font-family: 'Nunito Sans',
+  sans-serif;
+}
