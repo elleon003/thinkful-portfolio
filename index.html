@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Technical Requirements:
-   doctype, html, head, body, meta, title,
-   h1, h2, h3, p, link, ul, ol, img, a, hr -->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,58 +23,69 @@
   <header>
     <h1>Noelle Anderson</h1>
     <h2>Web Developer</h2>
+    <!-- @TODO - add nav to this section -->
   </header>
   <main>
-    <article id="intro">
-      <img src="images/noelle.png" alt="Noelle Anderson">
-    <h2>Hi! I'm Noelle Anderson</h2>
-    <p>I'm a web developer living in Columbus, OH</p>
-    <p>Thank you for taking the time to check out my site. Wanna hire me? Or just say hey? Reach out and <a href="#contact-me">contact me!</a></p>
-    </article>
-
-    <hr>
-    <article id="about-me">
-      <h2>About Me</h2>
-      <p>While I've worked for years as a professional singer and arts adminstrator, I've always had a love for technology. Dubbed the unofficial office IT department (cause we didn't have one for years in the theater), I've loved figuring out the technology I use.</p>
-      <p>I spent many years in a self-taught coding path, using resources like <a href="https://freecodecamp.org"
-          target="_blank" rel="noopener" rel="noreferrer">FreeCodeCamp</a> and <a href="https://www.theodinproject.com/"
-          target="_blank" rel=noopener" rel="noreferrer">The Odin Project</a>,but I craved more connection and
-        structure. I really wanted to have someone I could talk to.</p>
-      <p>Recently, I took the plunge and enrolled as a student of <a href="https://thinkful.com" target="_blank" rel="noreferrer" rel="noopener">Thinkful</a>. To have a mentor to talk to, and people to chat with online all focused and dedicated to learning in this program has been an amazing ride.</p>
-      <p>I have an insatiable desire for learning, so I'm extremely excited to fully commit to this endeavor.</p>
-      <h3>What Else Do I do?</h3>
-      <p>When I pull myself away from my computer, I love to pass the time by</p>
-      <ul>
-        <li>Hanging out with my husband and dog</li>
-        <li>Learning Spanish and Japanese on Duolingo</li>
-        <ul>
-          <li><i>(Beats doom-scrolling on Facebook!)</i></li>
-        </ul>
-        <li>Playing video Games</li>
-        <ul>
-          <li><i>Currently addicted to Paper Mario: The Origami King</i></li>
-        </ul>
-        <li>Reading books on marketing</li>
-      </ul>
-    </article>
-
-    <hr>
-    <article id="contact">
-      <h2>Contact Me</h2>
-      <p>I'd love to connect! Please check me out at one of my links below.</p>
-      <!-- LinkedIn Profile -->
-      <a href="https://www.linkedin.com/in/noelle-anderson/" target="_blank" rel="noopener" rel="noreferrer"><i
-          class="fab fa-linkedin fa-5x"></i></a>
-      <!-- Link to GitHub Profile -->
-      <a href="https://github.com/elleon003" target="_blank" rel="noopener" rel="noreferrer"><i
-          class="fab fa-github-square fa-5x"></i></a>
-    </article>
-
-    <footer>
-      <p>&copy;<a href="/">Noelle Anderson.dev</a> 2020</p>
-    </footer>
+    <div class="container">
+      <article id="intro">
+        <img src="images/noelle.png" alt="Noelle Anderson">
+        <h2>Hi! I'm Noelle Anderson</h2>
+        <p>I'm a web developer living in Columbus, OH</p>
+        <p>Thank you for taking the time to check out my site. Wanna hire me? Or just say hey? Reach out and <a href="#contact">contact me!</a></p>
+      </article> <!-- End Intro -->
+      
+      <hr>
+      <article id="about-me">
+        <h2>About Me</h2>
+        <p>While I've worked for years as a professional singer and arts administrator, I've always had a love for
+          technology. Dubbed the unofficial office IT department (cause we didn't have one for years in the theater), I've
+          loved figuring out the technology I use.</p>
+        <p>I spent many years in a self-taught coding path, using resources like <a href="https://freecodecamp.org"
+            target="_blank" rel="noopener" rel="noreferrer">FreeCodeCamp</a> and <a href="https://www.theodinproject.com/"
+            target="_blank" rel=noopener" rel="noreferrer">The Odin Project</a>,but I craved more connection and
+          structure. I really wanted to have someone I could talk to.</p>
+        <p>Recently, I took the plunge and enrolled as a student of <a href="https://thinkful.com" target="_blank"
+            rel="noreferrer" rel="noopener">Thinkful</a>. To have a mentor to talk to, and people to chat with online all
+          focused and dedicated to learning in this program has been an amazing ride.</p>
+        <p>I have an insatiable desire for learning, so I'm extremely excited to fully commit to this endeavor.</p>
+        <h3>What Else Do I do?</h3>
+        <p>When I pull myself away from my computer, I love to pass the time by</p>
+        <ol>
+          <li>Hanging out with my husband and dog</li>
+          <li>
+            Learning Spanish and Japanese on Duolingo
+            <ul>
+              <li><i>(Beats doom-scrolling on Facebook!)</i></li>
+            </ul>
+          </li>
+          <li>
+            Playing video Games
+            <ul>
+              <li><i>Currently addicted to Paper Mario: The Origami King</i></li>
+            </ul>
+          </li>
+          <li>Reading books on marketing</li>
+        </ol>
+      </article><!-- End About -->
+      
+      <hr>
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to connect! Please check me out at one of my links below.</p>
+        <div class="contact-links">
+          <!-- LinkedIn Profile -->
+          <a href="https://www.linkedin.com/in/noelle-anderson/" target="_blank" rel="noopener" rel="noreferrer"
+          aria-label="Noelle's LinkedIn Profile"><i
+            class="fab fa-linkedin fa-5x"></i></a>
+          <!-- Link to GitHub Profile -->
+          <a href="https://github.com/elleon003" target="_blank" rel="noopener" rel="noreferrer" aria-label="Noelle's GitHub Profile"><i
+            class="fab fa-github-square fa-5x"></i></a>
+        </div>
+      </article><!-- End Contact -->
+    </div><!-- End Container -->
   </main>
-
+  <footer>
+    <p>&copy;<a href="/">Noelle Anderson.dev</a> 2020</p>
+  </footer>
 </body>
-
 </html>

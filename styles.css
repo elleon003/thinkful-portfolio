@@ -1,14 +1,77 @@
-/* Required properties: 
-  background,
-  color,
-  font-family,
-  font-size,
-  height,
-  margin,
-  padding,
-  text-align,
-  Styled links using pseudo-classes
-*/
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Colors */
+body {
+  background-color: #DAC5BC;
+}
+
+header,
+footer {
+  background-color: #bd634f;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+a:visited {
+  color:rgb(53, 52, 52);
+}
+
+footer a:visited {
+  color: black;
+}
+
+a:hover {
+  color:gray;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+/* Sizing & Spacing */
+header,
+footer {
+  padding: 2px 0;
+}
+
+h1,
+h2,
+#contact,
+footer {
+  text-align:center;
+}
+
+img {
+  width:250px;
+  height: 340px;  
+  margin: 0 auto;
+  display:block;
+}
+
+main {
+  max-width: 960px;
+  padding: 50px 0;
+  margin: auto;
+}
+
+article {
+  padding: 10px;
+}
+
 
 /* Font Styles */
 h1,
@@ -23,4 +86,6 @@ a,
 li {
   font-family: 'Nunito Sans',
   sans-serif;
+  font-size: 1.05em;
+  line-height:1.15em;
 }
