@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,24 +22,33 @@
 
 <body>
   <header>
-    <h1>Noelle Anderson</h1>
-    <h2>Web Developer</h2>
-    <!-- @TODO - add nav to this section -->
+    <h1>Noelle Anderson<span id="desktop-only">, Web Developer</span></h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div class="container">
       <article id="intro">
         <img src="images/noelle.png" alt="Noelle Anderson">
         <h2>Hi! I'm Noelle Anderson</h2>
-        <p>I'm a web developer living in Columbus, OH</p>
-        <p>My joy is bringing ideas to the world on the web. If you have an idea you'd love to see actualized online, please <a href="#contact">contact me!</a></p>
+        <p>I'm a web developer living in Columbus, OH.</p>
+        <p>My joy is bringing ideas to the world on the web. If you have an idea you'd love to see actualized online,
+          please <a href="#contact">contact me!</a></p>
       </article> <!-- End Intro -->
-      
+
       <hr>
       <article id="about-me">
         <h2>About Me</h2>
         <p>While I've worked for years as a professional singer and arts administrator, I've always had a love for
-          technology. Dubbed the unofficial office IT department (cause we didn't have one for years in the theater), I've
+          technology. Dubbed the unofficial office IT department (cause we didn't have one for years in the theater),
+          I've
           loved figuring out the technology I use.</p>
         <p>I spent many years in a self-taught coding path, using resources like <a href="https://freecodecamp.org"
             target="_blank" rel="noopener noreferrer">FreeCodeCamp</a> and <a href="https://www.theodinproject.com/"
@@ -71,7 +81,9 @@
       <hr>
       <article id="services">
         <h2>Services</h2>
-        <p>As I mentioned, I love bringing people's ideas online. As you'll see in my projects below, I've worked with several individuals from different industries. My favorite client is one that is passionate about what they do and is focused on conveying their message</p>
+        <p>As I mentioned, I love bringing people's ideas online. As you'll see in my projects below, I've worked with
+          several individuals from different industries. My favorite client is one that is passionate about what they do
+          and is focused on conveying their message</p>
         <h3>My main services are:</h3>
         <ul>
           <li><strong>Web Design</strong>
@@ -97,74 +109,103 @@
           <li>PHP Web development with WordPress and CraftCMS</li>
         </ul>
       </article>
-      
+
       <hr>
       <article id="projects">
         <h2>My Previous Projects</h2>
-        <div class="all-projects">
+        <div class="all-items">
           <section class="project-item">
             <h3>MattMcTeague.com</h3>
             <div class="project-links">
               <a href="https://mattmcteague.com" target="_blank" rel="noopener noreferrer">Visit
-                  Site</a>
-              <a href="https://github.com/elleon003/MattMcTeague-Static" target="_blank"
-                  rel="noopener noreferrer">View Git Repo</a>
+                Site</a>
+              <a href="https://github.com/elleon003/MattMcTeague-Static" target="_blank" rel="noopener noreferrer">View
+                Git Repo</a>
             </div>
             <div class="project-image">
               <img src="images/MattMcteague.com.png" alt="Screenshot of MattMcteague.com">
             </div>
-            <p>Matt McTeague is a licensed counselor who's plans to open his own practice accelerated in light of the COVID-19 crisis. With most of his ducks in a row in his professional requirements, he needed help with the technical side of opening his virtual doors.</p>
-            
-            <p>He wanted something simple, a space to talk about his services, provide necessary paperwork for clients, and have an easy way for people to contact him. While currently a static site, he has future plans to have a portal for his clients as well as accept payments online.</p>
+            <p>Matt McTeague is a licensed counselor who's plans to open his own practice accelerated in light of the
+              COVID-19 crisis. With most of his ducks in a row in his professional requirements, he needed help with the
+              technical side of opening his virtual doors.</p>
+
+            <p>He wanted something simple, a space to talk about his services, provide necessary paperwork for clients,
+              and have an easy way for people to contact him. While currently a static site, he has future plans to have
+              a portal for his clients as well as accept payments online.</p>
           </section>
           <section class="project-item">
             <h3>AmyLayWellness.org</h3>
             <div class="project-links">
               <a href="https://amylaywellness.org" target="_blank" rel="noopener noreferrer">Visit Site</a>
-              <a href="https://github.com/elleon003/amylaywellness" target="_blank"
-                  rel="noopener noreferrer">View Git Repo</a>
+              <a href="https://github.com/elleon003/amylaywellness" target="_blank" rel="noopener noreferrer">View Git
+                Repo</a>
             </div>
             <div class="project-image">
               <img src="images/amylaywellness.png" alt="Screenshot of AmyLayWellness.org">
             </div>
-            <p>Amy Lay is a health and wellness coach that is dedicated to teaching about clean living. She has spent years as a performer, and always took her fitness serious as a part of her craft. Now branching out, she offers several fitness classes (in person and in groups), yoga, and meal planning.</p>
-              
-            <p>She honestly didn't even think about having a website when she got started! However, realizing that she had a huge body of photos of her work, she wanted to have a central place to hold them that wasn't just Instagram (but she's got her pics on that too!)</p>
+            <p>Amy Lay is a health and wellness coach that is dedicated to teaching about clean living. She has spent
+              years as a performer, and always took her fitness serious as a part of her craft. Now branching out, she
+              offers several fitness classes (in person and in groups), yoga, and meal planning.</p>
+
+            <p>She honestly didn't even think about having a website when she got started! However, realizing that she
+              had a huge body of photos of her work, she wanted to have a central place to hold them that wasn't just
+              Instagram (but she's got her pics on that too!)</p>
           </section>
           <section class="project-item">
             <h3>ShutUpASecond.com</h3>
             <div class="project-links">
               <a href="https://shutupasecond.com" target="_blank" rel="noopener noreferrer">Visit
-                  Site</a>
+                Site</a>
               <a href="https://github.com/elleon003/shut-up-a-second-production" target="_blank"
-                  rel="noopener noreferrer">View
-                    Git Repo</a>
+                rel="noopener noreferrer">View
+                Git Repo</a>
             </div>
             <div class="project-image">
               <img src="images/shutupasecond.png" alt="Screenshot of ShutUpASecond.com">
             </div>
-            <p>Brandon Anderson is a talented writer....and also my husband! He's worked almost 20 years as a live performer, singer and arts administrator, but his heart lies in his writing. A craftsman with words, Brandon had written anything from comedy sketches to grant applications but had never considered keeping a blog. With the sudden abundance of time brought on by the temporary closure of our employer, Brandon decided to take the plunge and start writing.</p>
-            
-            <p>This site is my most ambitious site to date, utilizing a custom coded CMS to run his blog. The site was built with a custom designed frontend, and utilizes the WagtailCMS, a Python based CMS.</p>
+            <p>Brandon Anderson is a talented writer....and also my husband! He's worked almost 20 years as a live
+              performer, singer and arts administrator, but his heart lies in his writing. A craftsman with words,
+              Brandon had written anything from comedy sketches to grant applications but had never considered keeping a
+              blog. With the sudden abundance of time brought on by the temporary closure of our employer, Brandon
+              decided to take the plunge and start writing.</p>
+
+            <p>This site is my most ambitious site to date, utilizing a custom coded CMS to run his blog. The site was
+              built with a custom designed frontend, and utilizes the WagtailCMS, a Python based CMS.</p>
           </section>
         </div>
-      </article> <!-- End Projects -->
-      
+      </article><!-- End Projects -->
+
       <hr>
       <article id="contact">
         <h2>Contact Me</h2>
-        <p>I'd love to connect! Questions about my work? Wanna hire me? Just want to find out more about my journey? Hit me up below!</p>
-        <div class="contact-links">
-          <!-- Email Address - @TODO replace w/Contact Form -->
-          <a href="mailto:noelle@noelleanderson.dev?subject=Website%20Contact"
-            aria-label="Email Me"><i class="fas fa-at fa-5x"></i></a>
-          <!-- LinkedIn Profile -->
-          <a href="https://www.linkedin.com/in/noelle-anderson/" target="_blank" rel="noopener noreferrer"
-          aria-label="Noelle's LinkedIn Profile"><i
-            class="fab fa-linkedin fa-5x"></i></a>
-          <!-- Link to GitHub Profile -->
-          <a href="https://github.com/elleon003" target="_blank" rel="noopener noreferrer" aria-label="Noelle's GitHub Profile"><i
-            class="fab fa-github-square fa-5x"></i></a>
+        <div class="contact-items">
+          <form action="https://formspree.io/xlepvgpw" method="POST">
+            <h3>Let's chat! Fill out the form below to send me an email!</h3>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="_replyto" id="email" placeholder="yourname@yourdomain.com" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="What would you like to talk about?" required></textarea>
+
+            <input type="hidden" name="_subject" id="subject" value="Contact Form Submission">
+
+            <input type="submit" value="Send">
+          </form>
+          <div class="contact-links">
+            <h3>Or, if you'd rather, check out my links below: </h3>
+            <!-- LinkedIn Profile -->
+            <a href="https://www.linkedin.com/in/noelle-anderson/" target="_blank" rel="noopener noreferrer"
+              aria-label="Noelle's LinkedIn Profile"><i class="fab fa-linkedin fa-5x"></i></a>
+            <!-- Link to GitHub Profile -->
+            <a href="https://github.com/elleon003" target="_blank" rel="noopener noreferrer"
+              aria-label="Noelle's GitHub Profile"><i class="fab fa-github-square fa-5x"></i></a>
+            <!-- Link to Twitter -->
+            <a href="https://twitter.com/SheBuildsWCode" target="_blank" rel="noopener noreferrer"
+              aria-label="Noelle's Twitter Account"><i class="fab fa-twitter-square fa-5x"></i></a>
+          </div>
         </div>
       </article><!-- End Contact -->
 
@@ -174,4 +215,5 @@
     <p>&copy;<a href="/">Noelle Anderson.dev</a> 2020</p>
   </footer>
 </body>
+
 </html>
