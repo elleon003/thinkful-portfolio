@@ -71,15 +71,19 @@ header {
   align-items: center;
 }
 
+nav {
+  width: 95%;
+}
+
 nav ul {
   display: flex;
   padding-left: 0;
   list-style-type: none;
+  justify-content: space-between;
 }
 
 nav ul li {
-  display: inline-flex;
-  padding: 0 8px;
+  font-size: 1rem;
 }
 
 nav ul li a:hover {
@@ -142,6 +146,9 @@ nav ul li a:hover {
   color:black;
 }
 
+#projects h4 {
+  margin: 0;
+}
 
 /********* CONTACT *********/
 #contact h3 {
@@ -196,6 +203,10 @@ input[type=submit]:hover {
   margin-top: 25px;
 }
 
+#contact h3 {
+  text-align:center;
+}
+
 
 /********* DESKTOP STYLES *********/
 @media all and (min-width: 850px) {
@@ -216,10 +227,21 @@ input[type=submit]:hover {
     padding: 0 15px;
   }
 
+  header h1 {
+    flex-shrink: 0;
+  }
+
   #desktop-only {
     display: inline;
   }
 
+  nav ul {
+    justify-content: end;
+  }
+
+  nav ul li {
+    padding: 0 1em;
+  }
   .project-item {
     width: 50%;
   }
@@ -229,7 +251,7 @@ input[type=submit]:hover {
     flex-direction: column;
   }
 
-  .project-image {
+  .project-content {
     flex: 1 0 auto;
   }
 
@@ -257,7 +279,11 @@ input[type=submit]:hover {
 
   .contact-links {
     flex: 1;
+    margin-top: 0;
   }
+
+  #contact h3 {
+    text-align: left;
+  }
+
 }
-
-
