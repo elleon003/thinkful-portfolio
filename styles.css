@@ -235,6 +235,10 @@ input[type=submit]:hover {
     display: inline;
   }
 
+  nav {
+    width: auto;
+  }
+
   nav ul {
     justify-content: end;
   }
