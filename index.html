@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174273283-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-174273283-2');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +19,27 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Matomo Tracking -->
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.noelleanderson.dev"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//anderson-sites.com/analytics/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '6']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -268,26 +280,26 @@
       <article id="contact">
         <h2>Contact Me</h2>
         <div class="contact-items">
-          <form action="https://formspree.io/xlepvgpw" method="POST">
+          <form action="https://usebasin.com/f/967cb587dc7f
+          " method="POST" id="invisible-recaptcha-form">
             <h3>Let's chat! Fill out the form below to send me an email!</h3>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Your Name" required>
 
             <label for="email">Email Address</label>
-            <input type="email" name="_replyto" id="email" placeholder="yourname@yourdomain.com" required>
+            <input type="email" name="email" id="email" placeholder="yourname@yourdomain.com" required>
 
             <label for="message">Message</label>
             <textarea name="message" id="message" placeholder="What would you like to talk about?" required></textarea>
-
-            <input type="hidden" name="_subject" id="subject" value="Contact Form Submission">
-
-            <input type="submit" value="Send">
+            <script>
+              function onSubmit(token) {
+              document.getElementById("invisible-recaptcha-form").submit();
+              }
+              </script>
+            <input type="submit" value="Send" class="g-recaptcha" data- sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">
           </form>
           <div class="contact-links">
             <h3>Or, if you'd rather, check out my links below: </h3>
-            <!-- Email Address -->
-            <a href="mailto:noelle@noelleanderson.dev" target="_blank" rel="noopener noreferrer"
-              aria-label="noelle@noelleanderson.dev"><i class="fas fa-at fa-5x"></i></a>
             <!-- LinkedIn Profile -->
             <a href="https://www.linkedin.com/in/noelle-anderson/" target="_blank" rel="noopener noreferrer"
               aria-label="Noelle's LinkedIn Profile"><i class="fab fa-linkedin fa-5x"></i></a>
@@ -304,7 +316,7 @@
     </div><!-- End Container -->
   </main>
   <footer>
-    <p>&copy;<a href="/">Noelle Anderson.dev</a> 2020</p>
+    <p>&copy;<a href="/">Noelle Anderson.dev</a> 2021</p>
   </footer>
 </body>
 
